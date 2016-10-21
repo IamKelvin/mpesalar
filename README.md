@@ -17,7 +17,7 @@ The customer then confirms the transaction. If the validation of the customer fa
 
 Pull in the package through Composer.
 
-Run `composer require smodav/mpesa`
+Run `composer require IamKelvin/mpesalar`
 
 ### Laravel
 
@@ -25,11 +25,11 @@ When using Laravel 5, include the service provider and its alias within your `co
 
 ```php
 'providers' => [
-    SmoDav\Mpesa\MpesaServiceProvider::class,
+    IamKelvin\Mpesa\MpesaServiceProvider::class,
 ],
 
 'aliases' => [
-    'Mpesa' => SmoDav\Mpesa\Mpesa::class,
+    'Mpesa' => IamKelvin\Mpesa\Mpesa::class,
 ],
 ```
 
@@ -102,7 +102,7 @@ of the Merchant's Paybill Number.
 
 - transaction_id_handler: class
 
-Default: '\SmoDav\Mpesa\Generator'
+Default: '\IamKelvin\Mpesa\Generator'
 
 Provide a fully qualified class name of the Class that will be
 used to generate the transaction number. This class must implement the
